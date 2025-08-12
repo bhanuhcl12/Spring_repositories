@@ -1,12 +1,7 @@
 name: CI Maven Project
 
 on: 
-  workflow_dispatch:
-    inputs:
-      TARGET_ENVIRONMENT:
-        type: environment
-        default: dev
-  
+  workflow_dispatch
 jobs:
   CI_Non_containerization_build:
     runs-on: ubuntu-latest
